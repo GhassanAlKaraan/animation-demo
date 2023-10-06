@@ -10,6 +10,7 @@ class BookmarkButton extends StatefulWidget {
 
 class _BookmarkButtonState extends State<BookmarkButton> with SingleTickerProviderStateMixin{
 
+
   //controller
   late final AnimationController _controller;
 
@@ -17,7 +18,7 @@ class _BookmarkButtonState extends State<BookmarkButton> with SingleTickerProvid
   void initState() {
     super.initState();
     _controller =
-        AnimationController(duration: const Duration(seconds: 1), vsync: this);
+        AnimationController(duration: const Duration(seconds: 2), vsync: this);
   }
 
   @override
