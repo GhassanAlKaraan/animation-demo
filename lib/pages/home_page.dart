@@ -13,13 +13,13 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
         body: Padding(
-          padding: EdgeInsets.all(8.0),
+          padding: const EdgeInsets.all(8.0),
           child: Column(
             children: [
-              SizedBox(height: 50,),
-              Row(
+              const SizedBox(height: 50,),
+              const Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
@@ -32,10 +32,10 @@ class _HomePageState extends State<HomePage> {
                   BookmarkButton()
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 50,
               ),
-              Row(
+              const Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
@@ -48,6 +48,10 @@ class _HomePageState extends State<HomePage> {
                   Fox(),
                 ],
               ),
+              const SizedBox(
+                height: 100,
+              ),
+              ElevatedButton(onPressed: () => Navigator.pushReplacementNamed(context, '/'), child: const Text("<-- Splash Screen")),
             ],
           ),
         ));
